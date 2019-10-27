@@ -8,6 +8,17 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Repository
+# I need to set this here in order to do local builds of the site because I am
+# using an alias of "github.com-karlrado" instead of "github.com" in my local setting
+# for the "origin" remote.  I specify this alias as a Host in my SSH config file,
+# which allows me to specify a specific SSH key for this GitHub account.
+# Apparently jekyll looks at my remote "origin" value and can't do anything
+# with it because it contains this alias.
+# Otherwise, I'd have to set the PAGES_REPO_NWO environment variable whenever
+# serving the page locally.
+repository: karlrado/karlrado.github.io
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
